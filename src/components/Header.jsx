@@ -18,7 +18,7 @@ const Header = () => {
           <div className="word flex items-center gap-5 flex-wrap ">
             <NavLink to="/">
               <h3 className="font-sans text-gray-500 transition-[0.4s] hover:text-black hover:font-medium ">
-                Home
+                About Me
               </h3>
             </NavLink>
             <NavLink to="/project">
