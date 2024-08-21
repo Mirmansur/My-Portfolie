@@ -12,8 +12,11 @@ import icon8 from "../assets/sass.svg";
 import icon9 from "../assets/git.svg";
 import icon10 from "../assets/visuval.svg";
 import icon11 from "../assets/github.svg";
+import { useTranslation } from "react-i18next";
 
 const AboutSkills = () => {
+  let { t } = useTranslation();
+
   useEffect(() => {
     Aos.init();
   }, []);
@@ -27,7 +30,7 @@ const AboutSkills = () => {
               data-aos="fade-up"
               data-aos-duration="3000"
             >
-              My Tech Stack
+              {t("skills.My Tech Stack")}
             </h1>
             <p
               className="text-blue-950 font-normal text-xl font-sans"
@@ -35,7 +38,7 @@ const AboutSkills = () => {
               data-aos-duration="3000"
             >
               {" "}
-              Technologies I’ve been working with recently
+              {t("skills.Technologies I’ve been working with recently")}
             </p>
           </div>
           <div className="about-two flex flex-col gap-4">

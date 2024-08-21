@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import logo from "../assets/logo1.png";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";
 const Contact = () => {
+  let { t } = useTranslation();
+
   return (
     <div className="Contact">
       <div className="container mx-auto">
@@ -12,7 +15,7 @@ const Contact = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <h1>My telegram link for any questions :</h1>
+            <h1>{t("contact.My telegram link for any questions")} </h1>
             <h2>
               <a href="https://t.me/mirmansur702">@mirmansur702</a>
             </h2>
