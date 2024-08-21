@@ -30,8 +30,12 @@ const Contact = () => {
                 <p className="font-sans font-medium text-gray-600 ">
                   +998 94 626 15 90
                 </p>
-                <FaGithub className="text-2xl" />
-                <FaLinkedin className="text-2xl" />
+                <a href="https://github.com/Mirmansur">
+                  <FaGithub className="text-2xl" />
+                </a>
+                <a href="https://www.linkedin.com/in/mirmansur-rakhmatov-5aa051323/">
+                  <FaLinkedin className="text-2xl" />
+                </a>
               </div>
             </div>
           </div>
