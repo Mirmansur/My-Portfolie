@@ -15,7 +15,9 @@ const Contact = () => {
             data-aos="fade-up"
             data-aos-duration="3000"
           >
-            <h1>{t("contact.My telegram link for any questions")} </h1>
+            <h1 className=" text-3xl text-center">
+              {t("contact.My telegram link for any questions")}{" "}
+            </h1>
             <h2>
               <a href="https://t.me/mirmansur702">@mirmansur702</a>
             </h2>

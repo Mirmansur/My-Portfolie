@@ -13,11 +13,11 @@ import icon8 from "../assets/sass.svg";
 import icon11 from "../assets/github.svg";
 import akar from "../assets/akar.svg";
 import Hous from "../assets/Hous.png";
-import { FaSpotify } from "react-icons/fa";
 import flegs from "../assets/flegs.png";
-import xuroson from "../assets/logo.png";
 import furniro from "../assets/furniro.png";
 import { useTranslation } from "react-i18next";
+import spotify from "../assets/spotify.png";
+import xuroson from "../assets/xuroson.png";
 const Project = () => {
   let { t } = useTranslation();
 
@@ -40,7 +40,7 @@ const Project = () => {
               {t("myproject.Things I’ve built so far")}
             </p>
           </div>
-          <div className="pro-two p-10 flex items-center justify-between flex-wrap">
+          <div className="pro-two p-10 flex items-center justify-between flex-wrap gap-3">
             <div
               className="twos-one w-[365px] rounded-[20px] bg-white  shadow-2xl"
               data-aos="zoom-in-right"
@@ -93,19 +93,12 @@ const Project = () => {
               className="twos-one w-[365px] rounded-[20px] bg-white  shadow-2xl"
               data-aos="zoom-in-down"
             >
-              <div className="twos-img flex  items-center gap-3 w-[365px] rounded-t-2xl bg-green-700 p-7">
-                <FaSpotify
-                  className="flex  justify-center items-center text-9xl"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
+              <div className="twos-img  ">
+                <img
+                  src={spotify}
+                  alt=""
+                  className="w-[365px] rounded-t-2xl "
                 />
-                <h2
-                  className="text-5xl font-sans  font-bold"
-                  data-aos="zoom-out-left"
-                >
-                  Spotify
-                </h2>
               </div>
               <div className="twos-about flex flex-col  p-4 ">
                 <div className="about-one font-sans font-black text-xl mb-2">
@@ -201,7 +194,7 @@ const Project = () => {
               </div>
             </div>
           </div>
-          <div className="pro-two p-10 flex items-center justify-between flex-wrap">
+          <div className="pro-two p-10 flex items-center justify-between flex-wrap gap-3">
             <div
               className="twos-one w-[365px] rounded-[20px] bg-white  shadow-2xl"
               data-aos="zoom-in-right"
@@ -250,21 +243,12 @@ const Project = () => {
               className="twos-one w-[365px] rounded-[20px] bg-white  shadow-2xl"
               data-aos="zoom-in-down"
             >
-              <div className="twos-img flex  items-center gap-1 w-[365px] rounded-t-2xl bg-blue-950 p-5">
+              <div className="twos-img ">
                 <img
                   src={xuroson}
                   alt=""
-                  className="flex  justify-center items-center w-[150px] h-[150px]"
-                  data-aos="flip-left"
-                  data-aos-easing="ease-out-cubic"
-                  data-aos-duration="2000"
+                  className="w-[365px] rounded-t-2xl "
                 />
-                <h2
-                  className="text-4xl font-sans  font-bold text-white"
-                  data-aos="zoom-out-left"
-                >
-                  Xuroson
-                </h2>
               </div>
               <div className="twos-about flex flex-col  p-4 ">
                 <div className="about-one font-sans font-black text-xl mb-2">
@@ -291,16 +275,13 @@ const Project = () => {
                 <div className="about-four flex  items-center justify-between mt-4">
                   <div className="akar-one flex  items-center gap-2">
                     <img src={akar} alt="" />
-                    <a
-                      href="https://n58-7-mounth-exam.vercel.app/"
-                      className=""
-                    >
+                    <a href="https://xuroson.vercel.app/" className="">
                       {t("projet-about.Live Preview")}
                     </a>
                   </div>
                   <div className="akar-two flex items-center gap-2">
                     <img src={icon11} alt="" className="w-[20px]  h-[20px]" />
-                    <a href="https://github.com/Mirmansur/N58-7-Mounth-Exam.git">
+                    <a href="https://github.com/Mirmansur/xuroson.git">
                       {t("projet-about.View Code")}
                     </a>
                   </div>
